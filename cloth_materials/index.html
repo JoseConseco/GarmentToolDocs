@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Cloth Materials - Garment Tool Documentation</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Cloth Materials";
+        var mkdocs_page_input_path = "cloth_materials.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Garment Tool Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../quick_guide/">Quick T-shirt Demo</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../garment_panel/">Main Panel</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../pattern_tools/">Pattern Tools</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Cloth Materials</a>
+    <ul class="current">
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../garments_library/">Garments Library</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../cloth_interaction/">Cloth Interaction</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../curve_modeling/">Curve modeling helpers</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../bind_project/">Bind Project Tool</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../faq/">FAQ</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Garment Tool Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Cloth Materials</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h3 id="cloth-materials">Cloth Materials<a class="headerlink" href="#cloth-materials" title="Permanent link">#</a></h3>
+<p>In Blender, there isn't an easy method to set different cloth physics properties for different parts of the fabric. However, with Garment Tool's "Cloth Physics Presets," you can easily select a preset and apply it to the pattern you have under the cursor. </br></p>
+<p><img alt="Cloth Preset Panel" src="../img/local_cloth_presets.jpg" /></p>
+<h3 id="global-cloth-presets">Global Cloth Presets<a class="headerlink" href="#global-cloth-presets" title="Permanent link">#</a></h3>
+<p>First, step is to load global cloth presets, to current blend file. You can do this by clicking "Library Presets" button, marked in yellow on the image below. </br></p>
+<p><img alt="Global Cloth Presets" src="../img/global_presets.jpg" />
+<em>Click on any preset name to load it into the current blend file.</em></p>
+<blockquote>
+<p><strong>Note</strong> - If you do not see any Global Presets, use <code>Reset Global Presets</code> button to initialize them.</p>
+</blockquote>
+<h3 id="local-cloth-presets">Local Cloth Presets<a class="headerlink" href="#local-cloth-presets" title="Permanent link">#</a></h3>
+<p>After loading global presets (or creating new one by clicking [+] icon), you can apply these local presets to the pattern.</p>
+<ol>
+<li>Select Preset from the list, that you want to apply to the pattern.</li>
+<li>Select cloth object and click <code>Assign Preset: name</code> button,</li>
+<li>Then click on the pattern in 3D Viewport.</li>
+<li>Use Enter or RMB to finish.</li>
+</ol>
+<p><img alt="Local Cloth Presets" src="../img/local_cloth_presets_ui.jpg" /></p>
+<blockquote>
+<p><strong>Note</strong> - Local presets can be saved to the global library, by clicking <code>Save Global Preset</code> button.</p>
+</blockquote>
+<h3 id="local-preset-how-they-work">Local Preset - How they work<a class="headerlink" href="#local-preset-how-they-work" title="Permanent link">#</a></h3>
+<p>Local cloth presets settings are stored in current blend file. To use them in another blend file, you need to save them to the global library. </br></p>
+<p>Cloth settings are split into sections:</p>
+<ul>
+<li><strong>Unique Properties</strong> - these properties are unique to the pattern, depending on the pattern's material.</li>
+<li><strong>Shared Properties</strong> - these properties are shared between all patterns - no matter what material they use</li>
+</ul>
+<p>This is due to the fact, that some clot properties cannot be masked with vertex groups, and some can. </br>
+For example mass - cannot be masked, meaning all cloth vertices have to use same mass. </br></p>
+<p>The final section is for other cloth settings: simulation quality, collision settings. They are not part of the preset, but it is handy to have in one spot, together with other cloth settings.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../pattern_tools/" class="btn btn-neutral float-left" title="Pattern Tools"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../garments_library/" class="btn btn-neutral float-right" title="Garments Library">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../pattern_tools/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../garments_library/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

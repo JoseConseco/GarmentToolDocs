@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Pattern Tools - Garment Tool Documentation</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Pattern Tools";
+        var mkdocs_page_input_path = "pattern_tools.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Garment Tool Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../quick_guide/">Quick T-shirt Demo</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../garment_panel/">Main Panel</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Pattern Tools</a>
+    <ul class="current">
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../cloth_materials/">Cloth Materials</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../garments_library/">Garments Library</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../cloth_interaction/">Cloth Interaction</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../curve_modeling/">Curve modeling helpers</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../bind_project/">Bind Project Tool</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../faq/">FAQ</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Garment Tool Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Pattern Tools</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h3 id="pattern-tools">Pattern Tools<a class="headerlink" href="#pattern-tools" title="Permanent link">#</a></h3>
+<p>They help with modeling sewing patterns curves, while preserving sewings data. You have option to split, mirror, weld points etc.</p>
+<p><img alt="Pattern Tools" src="../img/gm_pattern_tools.png" /></p>
+<h3 id="symmetrize">Symmetrize<a class="headerlink" href="#symmetrize" title="Permanent link">#</a></h3>
+<p>Symmetrize behaves like mirror modifier on meshes.
+There are two algorithms for symmetrize:</p>
+<ul>
+<li>default will preserve sewings better, but may fail to symmetrize more complicated patterns</li>
+<li>second one (accessed by Shift+Click on 'Symmetrize' button) - works better on more complicated patterns, but won't preserve sewings as well.</li>
+</ul>
+<video style="width:100%" controls src="../video/symmetrize.mp4" type="video/mp4"></video>
+
+<h3 id="flip-patterns">Flip patterns<a class="headerlink" href="#flip-patterns" title="Permanent link">#</a></h3>
+<p>Flip operator will create linked instance of selected 2d curve, on opposite side of character. If you flip curve that was already linked, it will update the position of previous pattern duplicate, instead of creating new instance. </br>
+Patterns are linked if theirs names ends with:</p>
+<ul>
+<li>(.r, .l) or (.R and .L)</li>
+<li>(.right, .left) or (.RIGHT, .LEFT)</li>
+<li>or the same but with dot replaced with '_'</li>
+</ul>
+<p>For example:  arm_l, arm_r is valid suffix for linked mirrored sewing patterns. </p>
+<video style="width:100%" controls src="../video/flip_pattern.mp4" type="video/mp4"></video>
+
+<h3 id="stitch-points">Stitch Points<a class="headerlink" href="#stitch-points" title="Permanent link">#</a></h3>
+<p>Moves two points together, and merges them.</p>
+<video style="width:100%" controls src="../video/stitch_points.mp4" type="video/mp4"></video>
+
+<h3 id="connect-points">Connect Points<a class="headerlink" href="#connect-points" title="Permanent link">#</a></h3>
+<p>Connect two selected points with line.</p>
+<video style="width:100%" controls src="../video/connect_points.mp4" type="video/mp4"></video>
+
+<h3 id="cut-pattern-in-half">Cut pattern in half<a class="headerlink" href="#cut-pattern-in-half" title="Permanent link">#</a></h3>
+<p>Split 2D curve into two parts. Splitting is performed along the center X-axis line. There is option (F9) to instance the mirrored part.
+* Instance option wont preserve the sewings data!</p>
+<video style="width:100%" controls src="../video/cut_half.mp4" type="video/mp4"></video>
+
+<h3 id="separate-join-patterns">Separate / Join patterns<a class="headerlink" href="#separate-join-patterns" title="Permanent link">#</a></h3>
+<p>Split 2D curve into two separate object. Or join 2D curve into one sewing pattern object.</p>
+<video style="width:100%" controls src="../video/separate_join.mp4" type="video/mp4"></video>
+
+<h3 id="duplicate-sewed-pattern">Duplicate sewed pattern<a class="headerlink" href="#duplicate-sewed-pattern" title="Permanent link">#</a></h3>
+<p>This option will duplicate selected 2d curve, and it will connect all edges of duplicate and source curve with sewings. Sewings will be generated only if duplicated patter is used in Garment.
+There if option 'sewing source' (under F9):</p>
+<ul>
+<li>SEWINGS - clone will duplicate existing source object sewings</li>
+<li>OBJECT - clone will be stitched to source object</li>
+</ul>
+<video style="width:100%" controls src="../video/duplicate_sewed.mp4" type="video/mp4"></video>
+<!-- <iframe width="640" height="360" src="https://www.youtube.com/embed/qvdxE6YbOSU?rel=0&start=582&end=646&autoplay=0" frameborder="0" allowfullscreen></iframe> -->
+
+<h3 id="pattern-knife-tool">Pattern Knife Tool<a class="headerlink" href="#pattern-knife-tool" title="Permanent link">#</a></h3>
+<p>You can split segments with it, or cut sewing patterns, while maintaining garment sewings.</p>
+<video style="width:100%" controls src="../video/pattern_knife.mp4" type="video/mp4"></video>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../garment_panel/" class="btn btn-neutral float-left" title="Main Panel"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../cloth_materials/" class="btn btn-neutral float-right" title="Cloth Materials">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../garment_panel/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../cloth_materials/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

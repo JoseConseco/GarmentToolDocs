@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Main Panel - Garment Tool Documentation</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Main Panel";
+        var mkdocs_page_input_path = "garment_panel.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Garment Tool Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../quick_guide/">Quick T-shirt Demo</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Main Panel</a>
+    <ul class="current">
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../pattern_tools/">Pattern Tools</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../cloth_materials/">Cloth Materials</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../garments_library/">Garments Library</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../cloth_interaction/">Cloth Interaction</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../curve_modeling/">Curve modeling helpers</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../bind_project/">Bind Project Tool</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../faq/">FAQ</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Garment Tool Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Main Panel</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h3 id="garment-panel">Garment Panel<a class="headerlink" href="#garment-panel" title="Permanent link">#</a></h3>
+<p><img alt="Main Panel" src="../img/garments_panel.gif" />
+All buttons in Garments Panel, are placed in the order you would usually use them, when starting new Project. Starting from top, your steps may be as follow:</p>
+<ul>
+<li>add sewings, pockets or pins to your garment</li>
+<li>generate Mesh at target resolution using Quads or Tris</li>
+<li>finally simulate output mesh using blender cloth sim</li>
+</ul>
+<h3 id="edit-sewings">Edit Sewings<a class="headerlink" href="#edit-sewings" title="Permanent link">#</a></h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9klyDxFhDKI?start=66" frameborder="0" allow="accelerometer; autoplay=0; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>You can connect any two segments from sewings patterns using this button. Later, when generating final mesh, Garment Tool will create connecting edges for each sewing.</p>
+<h3 id="sewnings-overlay">Sewnings Overlay<a class="headerlink" href="#sewnings-overlay" title="Permanent link">#</a></h3>
+<p>You can now edith sewing patterns, while viewing garment sewings and segment lengths. This will help you match patterns to each other.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9klyDxFhDKI?start=101" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h3 id="edit-pockets">Edit Pockets<a class="headerlink" href="#edit-pockets" title="Permanent link">#</a></h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yXlyZ2WU3IY?start=119" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>Pocked - is 2d Curve that will be projected and sewed to target pattern. You can define which 2D Curve should be connected to which sewing pattern using this Button.</p>
+<h3 id="edit-pins">Edit Pins<a class="headerlink" href="#edit-pins" title="Permanent link">#</a></h3>
+<!-- <iframe width="640" height="360" src="https://www.youtube.com/embed/qvdxE6YbOSU?rel=0&start=1628&end=1798&autoplay=0" frameborder="0" allowfullscreen></iframe> -->
+
+<p>They are similar to Sewings, except they connect patterns with single edges. That edge can connect any point on pattern surface.</p>
+<h4 id="generate-mesh">Generate Mesh<a class="headerlink" href="#generate-mesh" title="Permanent link">#</a></h4>
+<p>Converts sewing patterns to 3d mesh (made from Triangles of Quads) that can be simulated using blender cloth sim. Vertex groups, UVs corresponding to each sewing pattern will be created.</p>
+<ul>
+<li>
+<p>If you enabled Bend Modifier, of Lattice Modifier, at <a href="./#sewing-patterns">Sewing Patterns</a> list, they will be attached to output mesh at this step.</p>
+</li>
+<li>
+<p>The generated mesh will be placed in 'Generated_'+garment_name collection. The mesh itself will be named using garment Name property - located at top of each garment panel.
+https://developer.apple.com/testflight/</p>
+</li>
+<li>Density of generated mesh triangulation is described by the 'Resolution' parameter located below it.</li>
+</ul>
+<p><img alt="Main Panel" src="../img/tris_vs_quad.gif" /></p>
+<h4 id="output">Output<a class="headerlink" href="#output" title="Permanent link">#</a></h4>
+<p>Points to generated mesh (added in version 2.0.5 to help with proper exporting of presets to <a href="../garments_library/">Garment Library</a>, usually there is no need to change it)</p>
+<h4 id="initialize-simulation">Initialize Simulation<a class="headerlink" href="#initialize-simulation" title="Permanent link">#</a></h4>
+<p>Increases gravity slowly over time. This prevents too fast falling of generated cloth on the floor, before it wraps around the character. Same  operation is applied to 'Max Sewing force' and 'Max Shrinking' parameters.</p>
+<p>The speed at which those parameters will increase/decrease is described by 'Sim Time' parameter. Lower value, gives faster gravity increase. </p>
+<h4 id="simulate">Simulate<a class="headerlink" href="#simulate" title="Permanent link">#</a></h4>
+<p>Same as Bake option, located in object Physics Tab (but without support for ESC-key cancel, cannot be fixed AFAIK) </p>
+<h4 id="finalize-cloth">Finalize cloth<a class="headerlink" href="#finalize-cloth" title="Permanent link">#</a></h4>
+<p>Creates new object with cloth simulation applied, uvs and vertex groups for each sewing pattern. It also cleans up the sewing edges, by collapsing, thus gives no gaps in between sewing patterns borders.</p>
+<h3 id="sewing-patterns">Sewing Patterns<a class="headerlink" href="#sewing-patterns" title="Permanent link">#</a></h3>
+<p><img alt="Sewing Patterns" src="../img/gm_sewing_patterns.png" /></p>
+<p>List of 2D bezier curves. Pattern won't be triangulated unless user defines at least one sewing connected to it.</p>
+<p>If curve fill mode is set to node (or curve mode is set to 3D) - then generated pattern wont be filled with triangles (only outline vertices will be generated).</p>
+<p>Options for Sewing Patterns:</p>
+<ul>
+<li>add / remove</li>
+<li>add bend, lattice modifier</li>
+<li>disable/enable sewing pattern (round radio button).</li>
+</ul>
+<h3 id="vertex-groups">Vertex Groups<a class="headerlink" href="#vertex-groups" title="Permanent link">#</a></h3>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/qvdxE6YbOSU?rel=0&start=1220&end=1364&autoplay=0" frameborder="0" allowfullscreen></iframe>
+
+<blockquote>
+<p><strong>Note</strong> - Video is bit old but vert groups work the same in latest version of Garment Tool.</p>
+</blockquote>
+<p>List of additional vertex groups that can be added on simulated mesh.
+This gives user ability to assign vertex groups to multiple sewing patterns. For example you can create one vertex group that will include all stiffer sewing patterns, or vertex group that will be then deformed by lattice/bend modifier..</p>
+<p>Options for Generated vertex groups:</p>
+<p><img alt="Vertex Groups" src="../img/gm_vgroups.png" /></p>
+<ul>
+<li>create/remove vertex group</li>
+<li>vertex group name</li>
+<li>list of sewing patterns that will use given vertex group</li>
+<li>add bend, lattice modifier to given vertex group</li>
+<li>option to generated border vertex group (and inverted border vertex group)</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../quick_guide/" class="btn btn-neutral float-left" title="Quick T-shirt Demo"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../pattern_tools/" class="btn btn-neutral float-right" title="Pattern Tools">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../quick_guide/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../pattern_tools/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
