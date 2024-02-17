@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Quick T-shirt Demo - Garment Tool Documentation</title>
+    <title>Shirt & Skirt Video - Garment Tool Documentation</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -13,7 +13,7 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Quick T-shirt Demo";
+        var mkdocs_page_name = "Shirt \u0026 Skirt Video";
         var mkdocs_page_input_path = "quick_guide.md";
         var mkdocs_page_url = null;
       </script>
@@ -45,8 +45,10 @@
                 </li>
               </ul>
               <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="./">Quick T-shirt Demo</a>
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Shirt & Skirt Video</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#quick-start-skirt">Quick Start - Skirt</a>
+    </li>
     </ul>
                 </li>
               </ul>
@@ -59,7 +61,7 @@
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../cloth_materials/">Cloth Materials</a>
+                <li class="toctree-l1"><a class="reference internal" href="../material_physics/">Cloth Material Physics</a>
                 </li>
               </ul>
               <ul>
@@ -96,7 +98,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Quick T-shirt Demo</li>
+      <li class="breadcrumb-item active">Shirt & Skirt Video</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -106,37 +108,31 @@
             <div class="section" itemprop="articleBody">
               
                 <h3 id="video">Video<a class="headerlink" href="#video" title="Permanent link">#</a></h3>
-<iframe width="640" height="360" src="https://www.youtube.com/embed/yXlyZ2WU3IY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lmJpfygxt4U?si=66U3eeKqSRecDxwg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-<h3 id="text-version">Text version<a class="headerlink" href="#text-version" title="Permanent link">#</a></h3>
-<p><strong>Garment Tool</strong> supports only cyclic (closed) 2d Bezier curves. To create one use Shift+A &gt; Curve -&gt; Bezier Circe, and make any shape you wish from it.</br>
-For T-shirt, add four bezier circles, and model them into sewing patterns, like on image below:
-<img alt="Sewing Patterns" src="../img/sewing_patterns.png" /></p>
-<p>Place Sewing Patterns next to your character.</br>
-<img alt="Sewing Patterns" src="../img/guide_patterns_placed.png" /></p>
-<p>To create garment click <strong>+(Plus)</strong> icon, in the <a href="../garment_panel/#Garment-Panel">Garment Tool Panel</a>.</p>
-<video style="width:100%" controls src="../video/edit_sewings.mp4" type="video/mp4">
-
-More settings will popup, containing all the properties of T-shirt (sewing patterns, sewings, pins etc).
-
-Use **'Edit Sewings'** button (chain icon) in the [sewings](garment_panel.md#sewings) box to connect patterns together. You can add, remove, change existing sewings, flip sewing direction, while in edit sewing mode.</br>
-Press Enter / Spacebar to accept them sewings.  
->Notice - all the 2d curves, that were connected with sewings, are automatically assigned to the T-Shirt Sewing Patterns list.</br> 
-
-You can now convert T-Shirt to 3d mesh, with ['Generate Mesh'](garment_panel.md#convert-to-mesh) button. New collection will be created named:</br>
-***Generated + garment_name***
-
-From now on output mesh can be simulated using Blenders build in cloth sim.</br>
-<video style="width:100%" controls src="../video/tutorial_run_sim.mp4" type="video/mp4">
-
-Enable **'Use Bend Deformer'** for both sleeves patterns, so that they will wrap around the character arms.</br>
->Notice - GTool automatically creates and assigns vertex groups for each 2d pattern.
-
-Usually when simulating, the gravity will pull the cloth too fast to earth, so that  generated T-shirt won't have time to stick to character. To avoid that, you can use **['Initialize Simulation'](garment_panel.md#initialize-simulation)** button -> it will animate the gravity strength from 0 to 9,8 m/s^2 over the 'Sim Time' time. it will also animate the sewing force, and the 'Max Shrinking' property (if used).
->Usually when simulating you should increase the cloth 'Quality Steps' above 15, to prevent cloth going through body surface, and decrease the collision distance to around 0.002. The collision distance should be reduced also on the body of character.
-
-When you are satisfied with the simulation result you can:
-Save the bake into the shape key with **['Save to shape key'](garment_panel.md#save-to-shape-key)** button. You can save multiple shape keys to object, as long as you won't change the mesh topology.
+<p>Garment Tool works with cyclic (closed) 2d Bezier curves. To create one use Shift+A &gt; Curve -&gt; Bezier Circe. Since GTool 2.0 you can now add basic sewing patterns from Shift+A &gt; Add Sewing Pattern </br></p>
+<h4 id="quick-start-skirt">Quick Start - Skirt<a class="headerlink" href="#quick-start-skirt" title="Permanent link">#</a></h4>
+<p><img alt="Sewing Patterns" src="../img/sewing_patterns.png" />
+<em>Use: </em><em>Shift+A &gt; Add Sewing Pattern</em><em> and add Sleeve and Shirt presets. Adjust them to your liking</em></p>
+<p><img alt="Sewing Patterns" src="../img/guide_patterns_placed.png" />
+<em>Place Sewing Patterns next to your character</em></p>
+<video style="width:100%" controls src="../video/edit_sewings.mp4" type="video/mp4">Edit Sewings Video</video>
+<p><em>Click <code>[+]</code> icon to create garment, in the <a href="../garment_panel/#Garment-Panel">Garment Tool Panel</a></em></p>
+<p>Use <code>Edit Sewings</code> button (Chain icon) in the Edit / Generate section to connect patterns together. Pay attention to hotkeys listed in popup panel.</br>
+Press Enter / Space bar to accept.</p>
+<blockquote>
+<p><strong>Notice</strong> - all patterns (2d curves) connected with sewings will be automatically assigned to the garment patterns list.</br></p>
+</blockquote>
+<video style="width:100%" controls src="../video/tutorial_run_sim.mp4" type="video/mp4"></video>
+<p><em>You can now convert T-Shirt to simulation ready mesh, with <a href="../garment_panel/#generate-mesh">Generate Mesh</a> button. New collection will be created containing that mesh</em></p>
+<p>From now on output mesh can be simulated using Blenders build in cloth sim - just enable blender animation playback, and cloth sim will start</br></p>
+<p>Use <strong>Edit Bend</strong> for both sleeves patterns, so that they will wrap around the character arms.</br></p>
+<p>Usually when simulating, the gravity will pull the cloth too fast to earth, so that  generated T-shirt won't have time to stick to character. To avoid that, you can use <strong><a href="../garment_panel/#initialize-simulation">'Initialize Simulation'</a></strong> button -&gt; it will animate the gravity strength from 0 to 9,8 m/s^2 over the 'Sim Time' time. it will also animate the sewing force, and the 'Max Shrinking' property (if used).</p>
+<blockquote>
+<p>Usually when simulating you should increase the cloth 'Quality Steps' above 15, to prevent cloth going through body surface, and decrease the collision distance to around 0.002. The collision distance should be reduced also on the body of character.</p>
+</blockquote>
+<p>When you are satisfied with the simulation result you can:
+Save the bake into the shape key with <strong><a href="../garment_panel/#save-to-shape-keys">'Save to shape keys'</a></strong> button. You can save multiple shape keys to object, as long as you won't change the mesh topology.</p>
               
             </div>
           </div><footer>

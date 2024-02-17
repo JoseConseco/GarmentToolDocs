@@ -55,7 +55,7 @@
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="quick_guide/">Quick T-shirt Demo</a>
+                <li class="toctree-l1"><a class="reference internal" href="quick_guide/">Shirt & Skirt Video</a>
                 </li>
               </ul>
               <ul>
@@ -67,7 +67,7 @@
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="cloth_materials/">Cloth Materials</a>
+                <li class="toctree-l1"><a class="reference internal" href="material_physics/">Cloth Material Physics</a>
                 </li>
               </ul>
               <ul>
@@ -114,21 +114,24 @@
             <div class="section" itemprop="articleBody">
               
                 <h2 id="garment-tool-documentation">Garment Tool Documentation<a class="headerlink" href="#garment-tool-documentation" title="Permanent link">#</a></h2>
-<p><a href="https://gumroad.com/l/GarmentTool"><strong>Garment Tool</strong></a> is Blender addon designed to simplify process of making simulation ready cloth meshes inside Blender.
-Clot meshes are generated from 2d Bezier curves, sewed together and then triangulated into mesh object.</p>
+<p>The <strong>Garment Tool</strong> (available at <a href="https://gumroad.com/l/GarmentTool">https://gumroad.com/l/GarmentTool</a>) is a Blender add-on that streamlines the process of creating simulation ready, cloth meshes within Blender 3.6 and 4.x. These cloth meshes are created from 2D Bezier curves, stitched together, and then converted into a triangulation mesh object.</p>
 <p>For support use <a href="https://discord.gg/cxZDbqH">Gament Tool Discord channel</a></p>
-<p>Garment Tool panel is located in:</br>
-* 3D Viewport &gt; right Sidebar (N) &gt; Garment Tool Tab.</p>
+<p>Garment Tool panel is located in:</br></p>
+<ul>
+<li>3D Viewport &gt; right Sidebar (N) &gt; Garment Tool Tab.</li>
+</ul>
 <p><img alt="GM UI" src="img/gm_ui.png" /></p>
 <h3 id="features">Features<a class="headerlink" href="#features" title="Permanent link">#</a></h3>
 <ul>
-<li>ability to define sewings between sewing patterns (2d Bezier curves), directly in 3d viewport,</li>
-<li>ability to generate evenly triangulated mesh with adjustable resolution</li>
-<li>tools for automatic generation vertex groups and modifier that will speed up you workflow</li>
-<li><a href="pattern_tools/">helper tools</a> for symmetrize, splitting, duplicating, flipping 2d curve sewing patterns, while preserving sewings data.</li>
+<li>sewing patterns <a href="pattern_tools/">modeling tools</a>: symmetrize, split, flip, duplicate, stitch, connect, separate, join</li>
+<li>define <a href="./garment_panel/#edit-sewings">stitching between</a> patterns, directly in 3d viewport, visualize mismatched sewn segments lengths,</li>
+<li>generate evenly triangulated mesh with adjustable resolution,</li>
+<li>easy, per sewing pattern, cloth physics material assignment,</li>
+<li>automated vertex groups generation,</li>
+<li>custom bend tool for wrapping e.g. sleeves around character arms,</li>
 <li>Support for cutting holes inside sewing patterns (since 1.0.6)</li>
 <li>Pin tool for generating custom stitches (useful for buttons)</li>
-<li>Pocket tool for projecting sewings from source patterns to target pattern</li>
+<li>Pocket tool for projecting stitches from source patterns to target pattern</li>
 <li><a href="bind_project/">Bind Tool</a> -&gt; easy way of projecting 3d mesh, on surface of simulated cloth (useful for making attachments, bags, pockets, etc.)</li>
 <li><a href="garments_library/">Garment library</a> - store and load your creations</li>
 <li>saving baked simulation <a href="garment_panel/#save-to-shape-key">into shape-key</a></li>
@@ -155,7 +158,7 @@ When you are updating addon, usually it is good to remove old version by using '
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="quick_guide/" class="btn btn-neutral float-right" title="Quick T-shirt Demo">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="quick_guide/" class="btn btn-neutral float-right" title="Shirt & Skirt Video">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -199,5 +202,5 @@ When you are updating addon, usually it is good to remove old version by using '
 
 <!--
 MkDocs version : 1.5.3
-Build Date UTC : 2024-02-17 21:13:45.074736+00:00
+Build Date UTC : 2024-02-17 23:13:03.302098+00:00
 -->
