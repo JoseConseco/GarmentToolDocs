@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Shirt & Skirt Video - Garment Tool Documentation</title>
+    <title>Quick Start - Garment Tool Documentation</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -13,7 +13,7 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Shirt \u0026 Skirt Video";
+        var mkdocs_page_name = "Quick Start";
         var mkdocs_page_input_path = "quick_guide.md";
         var mkdocs_page_url = null;
       </script>
@@ -45,8 +45,12 @@
                 </li>
               </ul>
               <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="./">Shirt & Skirt Video</a>
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Quick Start</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#video-overview">Video Overview</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#pattern-settings">Pattern Settings</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#quick-start-skirt">Quick Start - Skirt</a>
     </li>
     </ul>
@@ -98,7 +102,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Shirt & Skirt Video</li>
+      <li class="breadcrumb-item active">Quick Start</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -107,10 +111,34 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h3 id="video">Video<a class="headerlink" href="#video" title="Permanent link">#</a></h3>
+                <h3 id="quick-start">Quick Start<a class="headerlink" href="#quick-start" title="Permanent link">#</a></h3>
+<h4 id="video-overview">Video Overview<a class="headerlink" href="#video-overview" title="Permanent link">#</a></h4>
+<p>In video below you will learn, how to:</p>
+<ul>
+<li>add sewing patterns (2D Bezier curves)</li>
+<li>sew them together</li>
+<li>convert them to simulation ready mesh</li>
+<li>simulate them using Blenders cloth sim</li>
+<li>save the simulation to shape keys</li>
+<li>assign cloth physics presets to sewing patterns</li>
+</ul>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lmJpfygxt4U?si=66U3eeKqSRecDxwg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-<p>Garment Tool works with cyclic (closed) 2d Bezier curves. To create one use Shift+A &gt; Curve -&gt; Bezier Circe. Since GTool 2.0 you can now add basic sewing patterns from Shift+A &gt; Add Sewing Pattern </br></p>
+<h4 id="pattern-settings">Pattern Settings<a class="headerlink" href="#pattern-settings" title="Permanent link">#</a></h4>
+<p>Garment Tool uses cyclic (closed) <strong>2D Bezier curves</strong> to define patterns.</p>
+<p>If you want to create your own sewing pattern from scratch use blender Bezier curve primitive:</p>
+<ul>
+<li>Shift+A -&gt; Curve -&gt; Bezier Circle</li>
+</ul>
+<p><img alt="Sewing Patterns" src="../img/proper_curve_settings.jpg" />
+<em>Make sure your bezier curve uses settings above, or it won't be recognized as sewing pattern by add-on</em></p>
+<p>Since release of Garment Tool 2.0 you can now add basic sewing patterns from <strong>Shift+A &gt; Add Sewing Pattern &gt; Select pattern</strong> from one of the presets:</p>
+<ul>
+<li>Rectangle</li>
+<li>Shirt</li>
+<li>Sleeve</li>
+<li>Pants</li>
+</ul>
 <h4 id="quick-start-skirt">Quick Start - Skirt<a class="headerlink" href="#quick-start-skirt" title="Permanent link">#</a></h4>
 <p><img alt="Sewing Patterns" src="../img/sewing_patterns.png" />
 <em>Use: </em><em>Shift+A &gt; Add Sewing Pattern</em><em> and add Sleeve and Shirt presets. Adjust them to your liking</em></p>
@@ -118,21 +146,16 @@
 <em>Place Sewing Patterns next to your character</em></p>
 <video style="width:100%" controls src="../video/edit_sewings.mp4" type="video/mp4">Edit Sewings Video</video>
 <p><em>Click <code>[+]</code> icon to create garment, in the <a href="../garment_panel/#Garment-Panel">Garment Tool Panel</a></em></p>
-<p>Use <code>Edit Sewings</code> button (Chain icon) in the Edit / Generate section to connect patterns together. Pay attention to hotkeys listed in popup panel.</br>
-Press Enter / Space bar to accept.</p>
+<p>Use <code>Edit Sewings</code> button (Chain icon) in the Edit / Generate section to connect patterns together. Pay attention to hotkeys listed in popup panel.</br></p>
 <blockquote>
-<p><strong>Notice</strong> - all patterns (2d curves) connected with sewings will be automatically assigned to the garment patterns list.</br></p>
+<p><strong>Notice</strong> - all patterns (2d curves) connected with sewings will be automatically assigned to the active garment.</br></p>
 </blockquote>
 <video style="width:100%" controls src="../video/tutorial_run_sim.mp4" type="video/mp4"></video>
 <p><em>You can now convert T-Shirt to simulation ready mesh, with <a href="../garment_panel/#generate-mesh">Generate Mesh</a> button. New collection will be created containing that mesh</em></p>
-<p>From now on output mesh can be simulated using Blenders build in cloth sim - just enable blender animation playback, and cloth sim will start</br></p>
 <p>Use <strong>Edit Bend</strong> for both sleeves patterns, so that they will wrap around the character arms.</br></p>
-<p>Usually when simulating, the gravity will pull the cloth too fast to earth, so that  generated T-shirt won't have time to stick to character. To avoid that, you can use <strong><a href="../garment_panel/#initialize-simulation">'Initialize Simulation'</a></strong> button -&gt; it will animate the gravity strength from 0 to 9,8 m/s^2 over the 'Sim Time' time. it will also animate the sewing force, and the 'Max Shrinking' property (if used).</p>
-<blockquote>
-<p>Usually when simulating you should increase the cloth 'Quality Steps' above 15, to prevent cloth going through body surface, and decrease the collision distance to around 0.002. The collision distance should be reduced also on the body of character.</p>
-</blockquote>
-<p>When you are satisfied with the simulation result you can:
-Save the bake into the shape key with <strong><a href="../garment_panel/#save-to-shape-keys">'Save to shape keys'</a></strong> button. You can save multiple shape keys to object, as long as you won't change the mesh topology.</p>
+<p>Generated triangulated mesh can be simulated now using Blenders build in cloth sim - enable blender animation playback, and simulation will start</br></p>
+<p>If the cloth falls too quickly to the ground due to gravity, you can use the <strong><a href="../garment_panel/#initialize-simulation">'Initialize Simulation'</a></strong> button. This will gradually increase the gravity strength from 0 to 9.8 m/s^2 over the 'Sim Time'. It will also animate the sewing force and the 'Max Shrinking' property (if applicable).</p>
+<p><strong>Notice:</strong> To avoid cloth passing through the character's body surface, increase the cloth 'Quality Steps' parameter above 15. Additionally, set the collision distance to approximately 0.002 (2 mm) and reduce it on the character's body as well.</p>
               
             </div>
           </div><footer>

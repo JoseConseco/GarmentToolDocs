@@ -45,7 +45,7 @@
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../quick_guide/">Shirt & Skirt Video</a>
+                <li class="toctree-l1"><a class="reference internal" href="../quick_guide/">Quick Start</a>
                 </li>
               </ul>
               <ul class="current">
@@ -53,7 +53,7 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#edit-sewings">Edit Sewings</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#sewnings-overlay">Sewnings Overlay</a>
+    <li class="toctree-l2"><a class="reference internal" href="#sewings-overlay">Sewings Overlay</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#edit-pockets">Edit Pockets</a>
     </li>
@@ -140,7 +140,7 @@ All buttons in Garments Panel, are placed in the order you would usually use the
 <h4 id="edit-sewings">Edit Sewings<a class="headerlink" href="#edit-sewings" title="Permanent link">#</a></h4>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9klyDxFhDKI?start=66" frameborder="0" allow="accelerometer; autoplay=0; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <p>You can connect any two segments from sewings patterns using this button. Later, when generating final mesh, Garment Tool will create connecting edges for each sewing.</p>
-<h4 id="sewnings-overlay">Sewnings Overlay<a class="headerlink" href="#sewnings-overlay" title="Permanent link">#</a></h4>
+<h4 id="sewings-overlay">Sewings Overlay<a class="headerlink" href="#sewings-overlay" title="Permanent link">#</a></h4>
 <p>You can now edith sewing patterns, while viewing garment sewings and segment lengths. This will help you match patterns to each other.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9klyDxFhDKI?start=101" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -177,36 +177,36 @@ Properties:<br></p>
 <p>Save the current state of the simulation to a shape key. At same time the cloth modifier will be deactivated. Useful when you want to simulate other part of garment, without having to simulate current garment at same time.</p>
 <h4 id="sewing-patterns">Sewing Patterns<a class="headerlink" href="#sewing-patterns" title="Permanent link">#</a></h4>
 <p><img alt="Sewing Patterns" src="../img/gm_sewing_patterns.png" /></p>
-<p>List of 2D bezier curves. Pattern won't be triangulated unless user defines at least one sewing connected to it.</p>
-<p>If curve fill mode is set to node (or curve mode is set to 3D) - then generated pattern wont be filled with triangles (only outline vertices will be generated).</p>
+<p>Here's a list of 2D Bezier curve patterns. Patterns without any sewings attached to it won't be triangulated.</p>
+<blockquote>
+<p><strong>Note</strong> If curve 'Fill mode' is set to None (or curve mode is set to 3D) - then only outline of pattern will generated pattern.</p>
+</blockquote>
 <p>Options for Sewing Patterns:</p>
 <ul>
-<li>add / remove</li>
-<li>add bend, lattice modifier</li>
 <li>disable/enable sewing pattern (round radio button).</li>
+<li>add Lattice modifier (not sure if I should keep it - using it breaks pattern dimensions)</li>
+<li>change sewing pattern physics preset (material)</li>
 </ul>
 <h4 id="vertex-groups">Vertex Groups<a class="headerlink" href="#vertex-groups" title="Permanent link">#</a></h4>
 <iframe width="640" height="360" src="https://www.youtube.com/embed/qvdxE6YbOSU?rel=0&start=1220&end=1364&autoplay=0" frameborder="0" allowfullscreen></iframe>
 
 <blockquote>
-<p><strong>Note</strong> - Video is bit old but vert groups work the same in latest version of Garment Tool.</p>
+<p><strong>Note</strong> - Video is bit old, but vert groups work the same in latest version of Garment Tool.</p>
 </blockquote>
 <p>List of additional vertex groups that can be added on simulated mesh.
 This gives user ability to assign vertex groups to multiple sewing patterns. For example you can create one vertex group that will include all stiffer sewing patterns, or vertex group that will be then deformed by lattice/bend modifier..</p>
 <p>Options for Generated vertex groups:</p>
 <p><img alt="Vertex Groups" src="../img/gm_vgroups.png" /></p>
 <ul>
-<li>create/remove vertex group</li>
-<li>vertex group name</li>
 <li>list of sewing patterns that will use given vertex group</li>
-<li>add bend, lattice modifier to given vertex group</li>
-<li>option to generated border vertex group (and inverted border vertex group)</li>
+<li>add lattice modifier to given vertex group</li>
+<li>add/remove vertex group</li>
 </ul>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../quick_guide/" class="btn btn-neutral float-left" title="Shirt & Skirt Video"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../quick_guide/" class="btn btn-neutral float-left" title="Quick Start"><span class="icon icon-circle-arrow-left"></span> Previous</a>
         <a href="../pattern_tools/" class="btn btn-neutral float-right" title="Pattern Tools">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
