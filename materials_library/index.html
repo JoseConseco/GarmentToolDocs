@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Materials Library - Garment Tool Documentation</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Materials Library";
+        var mkdocs_page_input_path = "materials_library.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Garment Tool Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../quick_guide/">Quick Start</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../garment_panel/">Main Panel</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../pattern_tools/">Pattern Tools</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../material_physics/">Cloth Material Physics</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../garments_library/">Garments Library</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../finalize_stitches/">Finalize/Stitches</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Materials Library</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#library-location">Library location</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#loading-materials">Loading materials</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#usage">Usage</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#license">License</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../cloth_interaction/">Cloth Interaction</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../curve_modeling/">Curve modeling helpers</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../bind_project/">Bind Project Tool</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../faq/">FAQ</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Garment Tool Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Materials Library</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h3 id="materials-library">Materials Library<a class="headerlink" href="#materials-library" title="Permanent link">#</a></h3>
+<p><img alt="Some of Material Presets" src="../img/some_gt_cloth_materials.jpg" /></p>
+<p>Since release of Garment Tool 2.1, garments library can now be used to load cloth materials presets - <strong>above 80 materials are included</strong> in the library (free for all Garment Tool users).</p>
+<video style="width:100%" controls src="../video/material_presets.mp4" type="video/mp4">Material Presets</video>
+<p><em>First we use Blender Asset Browser to add material to the mesh, then we use Garment Tool Library to replace active material on active mesh.</em></p>
+<h4 id="library-location">Library location<a class="headerlink" href="#library-location" title="Permanent link">#</a></h4>
+<p>User Preferences &gt; add-ons &gt; Garment Tool &gt; Library tab.</p>
+<p>To get materials library go to <a href="https://gumroad.com/">Gumroad</a>, and navigate to your Garment Tool purchase page. In the GTool downloads section you will find zip file with the sewing patterns and material presets.</p>
+<h4 id="loading-materials">Loading materials<a class="headerlink" href="#loading-materials" title="Permanent link">#</a></h4>
+<p>The Materials can be added to your mesh in two ways:</p>
+<ul>
+<li>Click on 'Append' button from Garment Tool Library panel - this will replace active material on active object - all other instances of this material will be replaced too!</li>
+<li>By dragging and dropping material from Blender's built-in Asset Browser - this will add new material to the mesh (but all other instances of this material won't be affected).</li>
+</ul>
+<h4 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">#</a></h4>
+<p>The Garment Tool material setup is quite simple - one <strong>diffuse texture is used for color roughness and bump</strong> (usually bump is done with Detail Texture though).<br>
+<strong>Curvature map attribute</strong> is used, in Overlay mode, on top of diffuse to add some depth to the material. Curvature Generator can be loaded using:</p>
+<ul>
+<li>'Garment Tool' tab &gt; 'Finalize/Stitches' panel &gt; <strong>Add Curvature Mod</strong> button.</li>
+</ul>
+<video style="width:100%" controls src="../video/curvature_mod.mp4" type="video/mp4">Material Presets</video>
+<p><em>Without <code>Curvature Generator</code> modifier the imported denim material looks flat</em></p>
+<video style="width:100%" controls src="../video/depth_section.mp4" type="video/mp4">Material Presets</video>
+<p><em><code>Depth Texture</code> is used for bump effect. It is also overlaid on top of Curvature, to break curvature smooth transition look</em></p>
+<video style="width:100%" controls src="../video/detail_section.mp4" type="video/mp4">Material Presets</video>
+<p><em><code>Detail Texture</code> - tillable texture overlaid on top of diffuse texture, to add tiny fabric detail to the material look. In Garment Tool it can be used to replace depth texture Bump map effect. Default detail texture is already included inside 'FabricShader' node, but it can be overridden with 'Use Custom Detail Texture' checkbox</em></p>
+<h4 id="license">License<a class="headerlink" href="#license" title="Permanent link">#</a></h4>
+<p>License - <a href="https://cartographyassets.com/license/">CAL-NA-NRB</a>. Basically you can do everything with the assets:</p>
+<ul>
+<li>commercial use of base asset and modifications,</li>
+<li>no requirement to credit the author,</li>
+<li>reselling of modifications,</li>
+<li>modifications are allowed, and can be shared</li>
+</ul>
+<p>The only thing you can't do is to resell the assets as they are. <strong>Reselling base items is not allowed</strong></p>
+<p>Except the Denim texture - I grabbed it form internet with CC0 license, so it is free to use for any purpose.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../finalize_stitches/" class="btn btn-neutral float-left" title="Finalize/Stitches"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../cloth_interaction/" class="btn btn-neutral float-right" title="Cloth Interaction">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../finalize_stitches/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../cloth_interaction/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Finalize/Stitches - Garment Tool Documentation</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Finalize/Stitches";
+        var mkdocs_page_input_path = "finalize_stitches.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Garment Tool Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../quick_guide/">Quick Start</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../garment_panel/">Main Panel</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../pattern_tools/">Pattern Tools</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../material_physics/">Cloth Material Physics</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../garments_library/">Garments Library</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Finalize/Stitches</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#solidify-modifier">Solidify Modifier</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#stitches-generator">Stitches Generator</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#spawn-place">Spawn Place</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#on-border">On Border</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#on-edge-attribute">On Edge Attribute</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#on-curve">On Curve</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#stitches-types">Stitches Types</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#single-stitch">Single Stitch</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#double-stitch">Double Stitch</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#double-cross">Double Cross</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#custom-object">Custom Object</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#array-deform">Array Deform</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#combining-multiple-stitches">Combining Multiple Stitches</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#stitches-indent-modifier">Stitches Indent Modifier</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#subdivision-shape-preserver">Subdivision Shape Preserver</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#curvature-modifier">Curvature Modifier</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#apply-stitches">Apply Stitches</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../materials_library/">Materials Library</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../cloth_interaction/">Cloth Interaction</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../curve_modeling/">Curve modeling helpers</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../bind_project/">Bind Project Tool</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../faq/">FAQ</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Garment Tool Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Finalize/Stitches</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h3 id="finalize-stitches">Finalize Stitches<a class="headerlink" href="#finalize-stitches" title="Permanent link">#</a></h3>
+<p>With Garment Tool 2.1, you can now use the "Finalize/Stitches" panel (you'll need Blender 4.2 or newer). This panel lets you add realistic details to your clothes, like:</p>
+<ul>
+<li><strong>Solidity:</strong> Makes the fabric look thicker and more substantial.</li>
+<li><strong>Curvature:</strong>  Adds natural curves to the fabric, making it look more lifelike.</li>
+<li><strong>Stitches:</strong>  You can choose from different stitch patterns and control how they look on your garment.</li>
+</ul>
+<video style="width:100%" controls src="../video/stitches_thickness.mp4" type="video/mp4">Material Presets</video>
+
+<h4 id="solidify-modifier">Solidify Modifier<a class="headerlink" href="#solidify-modifier" title="Permanent link">#</a></h4>
+<p>Similar to Blender built-in solidify but with some additional features:</p>
+<ul>
+<li>Rim Loops - additional loops around the rim of the mesh</li>
+<li>Per mesh island thickness - each mesh island can have different thickness</li>
+<li>Automatic corner vert creasing - based on angle of edges adjacent to the vertex</li>
+</ul>
+<video style="width:100%" controls src="../video/thickness_mod.mp4" type="video/mp4">Material Presets</video>
+<p><em>Narrated video explanation of Solidify Modifier</em></p>
+<blockquote>
+<p><strong>Note</strong>: The Corner Vert creasing requires mesh to contain valid UV map (UVs cannot overlap). Garment tools automatically generate UVs for sewing patterns. But for custom meshes, you may need to unwrap the mesh manually.</p>
+<p><strong>Note</strong>: If your mesh has subdivision modifier applied, you will have to disable UV Smooth option in it, so that Garment Tool 'Solidify Modifier', correctly calculates corner vertices.</p>
+</blockquote>
+<h4 id="stitches-generator">Stitches Generator<a class="headerlink" href="#stitches-generator" title="Permanent link">#</a></h4>
+<p>Stitches Generator has 3 types of stitches placement:</p>
+<ul>
+<li>on Border Edges</li>
+<li>on marked Edges (using GTool: 'Edit Edges Attributes' panel)</li>
+<li>using external curve</li>
+</ul>
+<p>And few types of stitches:</p>
+<ul>
+<li>Single Stitch - simplest but most versatile</li>
+<li>Double Stitch - with option of round endings</li>
+<li>Cross Stitch - X like</li>
+<li>Object Instancing - good for buttons (example button object is included with modifier)</li>
+<li>Array Deform Instancing - good for zippers (example zipper object is included with modifier)</li>
+</ul>
+<h5 id="spawn-place">Spawn Place<a class="headerlink" href="#spawn-place" title="Permanent link">#</a></h5>
+<h6 id="on-border">On Border<a class="headerlink" href="#on-border" title="Permanent link">#</a></h6>
+<video style="width:100%" controls src="../video/spawn_on_border.mp4" type="video/mp4">Spawn on Border</video>
+<p><em>Stitches spawned on border of each mesh island. You can add offset from border, and trim generated stitch guides</em></p>
+<h6 id="on-edge-attribute">On Edge Attribute<a class="headerlink" href="#on-edge-attribute" title="Permanent link">#</a></h6>
+<video style="width:100%" controls src="../video/spawn_on_edge.mp4" type="video/mp4">Spawn On Edges</video>
+<p><em>Stitches spawned on edges require you to assign edge attribute to the edges you want to spawn stitches on. You can trim generated stitch guides endings</em></p>
+<h6 id="on-curve">On Curve<a class="headerlink" href="#on-curve" title="Permanent link">#</a></h6>
+<video style="width:100%" controls src="../video/spawn_on_curve.mp4" type="video/mp4">Spawn On Curve</video>
+<p><em>Guide curves has to have same transformation (location, rotation, scale) as the mesh where stitches will be spawn on</em></p>
+<h5 id="stitches-types">Stitches Types<a class="headerlink" href="#stitches-types" title="Permanent link">#</a></h5>
+<h6 id="single-stitch">Single Stitch<a class="headerlink" href="#single-stitch" title="Permanent link">#</a></h6>
+<video style="width:100%" controls src="../video/single_stitch.mp4" type="video/mp4">Single Stitch</video>
+<p><em>Most basic, but also most used stitch type. Basic control over length, radius, and spacing</em></p>
+<h6 id="double-stitch">Double Stitch<a class="headerlink" href="#double-stitch" title="Permanent link">#</a></h6>
+<video style="width:100%" controls src="../video/double_stitch.mp4" type="video/mp4">Single Stitch</video>
+<p><em>Less used but has cool feature of 'Round Endings' (can be enabled globally or per each stitch segment)</em></p>
+<h6 id="double-cross">Double Cross<a class="headerlink" href="#double-cross" title="Permanent link">#</a></h6>
+<video style="width:100%" controls src="../video/cross_stitch.mp4" type="video/mp4">Single Stitch</video>
+<p><em>You have basic control over radius and size</em></p>
+<h6 id="custom-object">Custom Object<a class="headerlink" href="#custom-object" title="Permanent link">#</a></h6>
+<video style="width:100%" controls src="../video/custom_object.mp4" type="video/mp4">Single Stitch</video>
+<p><em>You can instance any object on guide stitch curves. Basic radius/size control</em></p>
+<h6 id="array-deform">Array Deform<a class="headerlink" href="#array-deform" title="Permanent link">#</a></h6>
+<video style="width:100%" controls src="../video/array_deform_stitch.mp4" type="video/mp4">Single Stitch</video>
+<p><em>Useful for zippers or ornaments (one zipper preset comes with the addon)</em></p>
+<h5 id="combining-multiple-stitches">Combining Multiple Stitches<a class="headerlink" href="#combining-multiple-stitches" title="Permanent link">#</a></h5>
+<video style="width:100%" controls src="../video/multiple_stitches_example.mp4" type="video/mp4">Single Stitch</video>
+<p><em>For best effect you would usually want to add at least few different stitches modifiers - go add detail to your garments and make them look interesting</em></p>
+<h4 id="stitches-indent-modifier">Stitches Indent Modifier<a class="headerlink" href="#stitches-indent-modifier" title="Permanent link">#</a></h4>
+<video style="width:100%" controls src="../video/stitches_indent_mod.mp4" type="video/mp4">Single Stitch</video>
+<p><em>This will press cloth surface downwards, under stitches to make it look like it's being pressed into the garment</em></p>
+<blockquote>
+<p><strong>Note</strong>: Indent Modifier uses curves generated by Stitches Generators, to calculate places where to indent the mesh. It has option to remove these curves as they may not be needed anymore after Indent step*</p>
+</blockquote>
+<h4 id="subdivision-shape-preserver">Subdivision Shape Preserver<a class="headerlink" href="#subdivision-shape-preserver" title="Permanent link">#</a></h4>
+<video style="width:100%" controls src="../video/subdiv_shape_preserver.mp4" type="video/mp4">Single Stitch</video>
+<p><em>Subdivision Shape Preserver modifier - negates the shrinking effect caused by Subdivision modifier. Can help to bring back cloth details. Should be placed before (above) Subdivision modifier</em></p>
+<h4 id="curvature-modifier">Curvature Modifier<a class="headerlink" href="#curvature-modifier" title="Permanent link">#</a></h4>
+<video style="width:100%" controls src="../video/curvature_mod.mp4" type="video/mp4">Single Stitch</video>
+<p><em>This will generate mesh attribute 'GT_CURVATURE' which is used in GTool cloth materials. For smoother result (and faster calculations) place it above Subdivision modifier</em></p>
+<h4 id="apply-stitches">Apply Stitches<a class="headerlink" href="#apply-stitches" title="Permanent link">#</a></h4>
+<video style="width:100%" controls src="../video/apply_stitches.mp4" type="video/mp4">Single Stitch</video>
+<p><em>Blender built-in Convert To &gt; Mesh won't correctly preserve sitches. Garment Tool 'Apply Stitches' is workaround for this issue</em></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../garments_library/" class="btn btn-neutral float-left" title="Garments Library"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../materials_library/" class="btn btn-neutral float-right" title="Materials Library">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../garments_library/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../materials_library/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
